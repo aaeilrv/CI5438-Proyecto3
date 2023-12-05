@@ -50,3 +50,11 @@ class Kmeans:
                 self.centroids = np.array(cluster_centers)
 
         return cluster_labels
+    
+    def get_inertia(self, cluster_labels):
+        inertia = 0
+        for i in range(self.k):
+            cluster_points = self.data.values[cluster_labels == i]
+            centroid = self.centroids[i]
+            inertia += np.sum(Kmeans.distance(cluster_points, centroid)**2)
+        return inertia
