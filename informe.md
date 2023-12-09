@@ -23,21 +23,30 @@ Algo notorio es que los valores de *Iris Versicolor* e *Iris Virginica* se solap
 ### Clustering
 El dataset se dividió en 2, 3, 4 y 5 clusters. Sin embargo, al hacer el *elbow method* con los resultados obtenidos del algoritmo para cada una de las *k* mencionadas, se determinó que el número ideal de clusters para este dataset es 3.
 
-![elbow](./img/results/elbow.png)
+| ![elbow](./img/results/elbow.png) |
+|:--:| 
+| *Elbow Method* |
 
 A continuación, mostramos los resultados obtenidos por cada una de las *k*:
 
-#### k = 2
-![2K](./img/iris_graphs/2K.png)
+| ![2K](./img/iris_graphs/2K.png) |
+|:--:| 
+| *K = 2* |
 
 #### k = 3
-![3K](./img/iris_graphs/3K.png)
+| ![3K](./img/iris_graphs/3K.png) |
+|:--:| 
+| *K = 3* |
 
 #### k = 4
-![4K](./img/iris_graphs/4K.png)
+| ![4K](./img/iris_graphs/4K.png) |
+|:--:| 
+| *K = 4* |
 
 #### k = 5
-![5K](./img/iris_graphs/5K.png)
+| ![5K](./img/iris_graphs/5K.png) |
+|:--:| 
+| *K = 5* |
 
 
 Tal como se vió por el *elbow method*, con *k*=3 se obtienen los valores más parecidos a la división original del dataset. Acá, a pesar de tener algunas clasificaciones erróneas para valores *Iris Versicolor* e *Iris Virginica* -esto producto del solapamiento mencionado anteriormente-, los valores referentes a *Iris Setosa* están bien agrupados.
@@ -49,19 +58,26 @@ Para esta sección, se utilizó Kmeans para segmentar los valores RGB de imágen
 Se utilizaron tres imágenes:
 #### Imagen I: Betty
 ![Betty](./img/results/betty.png)
-![Betty-OG](./img/originals/betty.png)
+| ![Betty-OG](./img/originals/betty.png) |
+|:--:| 
+| *Imagen original* |
 
 Se fue aumentando el valor de los clusters en una secuencia geométrica (2, 4, 8, ...) hasta llegar a 256 colores que es el tope del rango de los colores RGB. Sin embargo, al tener 32 clusters ya se ve que se han establecido todos los colores base de la imagen. A partir de ahí hasta 256, todo lo que cambia son pequeños grupos de detalles de la imagen.
 
 #### Imagen II: Hongo
 ![Hongo](./img/results/hongo.png)
-![Hongo-OG](./img/originals/hongo.png)
+| ![Hongo-OG](./img/originals/hongo.png) |
+|:--:| 
+| *Imagen original* |
 
 Se escogió por la cantidad de diversos colores que posee. Tal como en la imagen pasada, acá a las 30 agrupaciones ya se tiene establecida una imagen concreta con sus colores base.
 
 #### Imagen III: Pixel Art
 ![Pixel](./img/results/pixel.png)
-![Pixel-OG](./img/originals/pixel.png)
+| ![Pixel-OG](./img/originals/pixel.png) |
+|:--:| 
+| *Imagen originalL [Créditos](https://lospec.com/gallery/itsbitbits/hey)* |
+
 
 Se escogió ya que sólo posee cuatro colores, más se deseaba conocer si al tener un *k* mayor al total de los colores, cambiaría de alguna manera el resultado. Podemos ver que no es el caso.
 
