@@ -13,7 +13,9 @@ Para determinar la categorización de cada una de las muestras, el dataset tiene
 
 A continuación, podemos ver una distribución de las muestras del dataset combinando dos de los parámetros a la vez:
 
-![iris](./img/iris_graphs/Original.png).
+| ![iris](./img/iris_graphs/Original.png) |
+|:--:| 
+| *Iris Dataset* |
 
 Tal como se observa, *Iris Setosa* es la especie con mayor largo y ancho de pétalo y largo de sépalo. Asimismo, *Iris Virginica* posee los valores más bajos en estas tres categorías pero es aquella con mayor ancho de sépalo.
 Mientras tanto, los valores de *Iris Versicolor* se mantienen en el medio de las otras dos especies.
@@ -33,17 +35,14 @@ A continuación, mostramos los resultados obtenidos por cada una de las *k*:
 |:--:| 
 | *K = 2* |
 
-#### k = 3
 | ![3K](./img/iris_graphs/3K.png) |
 |:--:| 
 | *K = 3* |
 
-#### k = 4
 | ![4K](./img/iris_graphs/4K.png) |
 |:--:| 
 | *K = 4* |
 
-#### k = 5
 | ![5K](./img/iris_graphs/5K.png) |
 |:--:| 
 | *K = 5* |
@@ -76,7 +75,7 @@ Se escogió por la cantidad de diversos colores que posee. Tal como en la imagen
 ![Pixel](./img/results/pixel.png)
 | ![Pixel-OG](./img/originals/pixel.png) |
 |:--:| 
-| *Imagen originalL [Créditos](https://lospec.com/gallery/itsbitbits/hey)* |
+| *Imagen original. [Créditos: @BitBits](https://www.instagram.com/itsbitbits)* |
 
 
 Se escogió ya que sólo posee cuatro colores, más se deseaba conocer si al tener un *k* mayor al total de los colores, cambiaría de alguna manera el resultado. Podemos ver que no es el caso.
